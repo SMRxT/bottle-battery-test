@@ -1,0 +1,9 @@
+{
+    "lib": [
+        "ES2015"
+    ],
+    "files":["loop.ts"],
+    "compilerOptions": {
+        "target": "es6"
+    }
+}
