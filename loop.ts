@@ -1,4 +1,5 @@
-import { Client } from "tplink-smarthome-api";
+const tplink_api = require("tplink-smarthome-api");
+const Client = tplink_api.Client;
 
 const client = new Client();
 
