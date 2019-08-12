@@ -1,7 +1,17 @@
 import { Client } from "tplink-smarthome-api";
 
 const client = new Client();
-const plug = client.getPlug({ host: "192.168.1.117" });
+
+// client.startDiscovery().on('plug-new', (plug) => {
+//   console.log('found one', plug)
+//   plug.getInfo().then(console.log);
+//   plug.getSysInfo().then(console.log);
+//   //plug.setPowerStte(true);
+// });
+
+// '70:4F:57:B4:4F:AB
+  const plug = client.getPlug({ host: "192.168.1.113" });
+
 
 console.log("cycling forever starting now", new Date().toISOString());
 
