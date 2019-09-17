@@ -1,5 +1,4 @@
-const tplink_api = require("tplink-smarthome-api");
-const Client = tplink_api.Client;
+import { Client } from "tplink-smarthome-api";
 
 const client = new Client();
 
@@ -23,7 +22,7 @@ const delay = async time => {
 };
 
 const TIME_ON_TO_TRIGGER = 5 * 1000;
-const TIME_BETWEEN_TRIGGERS = 2 * 60 * 1000;
+const TIME_BETWEEN_TRIGGERS = 3 * 60 * 60 * 1000;
 
 (async () => {
   for (;;) {
